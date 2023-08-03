@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Idle Game Clicker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="object">
+                <h3>Object 1</h3>
+                <p>Cost: <span id="object1Cost">10</span> coins</p>
+                <p>Coins per Click: <span id="object1ClickValue">1</span></p>
+                <button onclick="buyObject(1)">Buy</button>
+            </div>
+            <div class="object">
+                <h3>Object 2</h3>
+                <p>Cost: <span id="object2Cost">50</span> coins</p>
+                <p>Coins per Second: <span id="object2CPS">0</span></p>
+                <button onclick="buyObject(2)">Buy</button>
+            </div>
+        </div>
+        <div class="game-area">
+            <button id="clickButton" onclick="incrementCoins()">Click Me!</button>
+        </div>
+        <div class="right-panel">
+            <p>Coins: <span id="coins">0</span></p>
+            <p>Coins per Second: <span id="cps">0</span></p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

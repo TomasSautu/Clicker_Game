@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2ae4cb;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel, .right-panel {
+    flex: 0.25;
+    padding: 20px;
+    border: 1px solid #1dabc1;
+    background-color: #2acbe4;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.object {
+    border: 1px solid #49b09a;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #62e7ca;
+}
+
+.game-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 100px;
+    font-size: 16px;
+    background-color: #42da90;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #015e26;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#clickButton {
+    padding: 40px;
+    font-size: 50px;
+}
+
+#clickButton:hover {
+    background-color: #ddd;
+    transform: scale(0.95);
+}
+
+#coins, #cps, #object1Cost, #object1ClickValue, #object2Cost, #object2CPS {
+    font-weight: bold;
+}
